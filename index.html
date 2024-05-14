@@ -5,6 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bijoux pour Femme</title>
     <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous de créer un fichier styles.css pour styliser votre site -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .product {
+            display: inline-block;
+            width: 30%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            vertical-align: top;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-info h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .product-info p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,17 +104,38 @@
     <main>
         <section id="featured">
             <h2>Produits Vedettes</h2>
-            <!-- Ajoutez ici des images ou des descriptions de vos produits vedettes -->
+            <div class="product">
+                <img src="placeholder.jpg" alt="Boucles d'oreilles">
+                <div class="product-info">
+                    <h3>Boucles d'oreilles élégantes</h3>
+                    <p>Prix : $29.99</p>
+                </div>
+            </div>
+            <!-- Ajoutez d'autres produits vedettes ici -->
         </section>
 
         <section id="new-arrivals">
             <h2>Nouveautés</h2>
-            <!-- Ajoutez ici des images ou des descriptions de vos nouveaux arrivages -->
+            <div class="product">
+                <img src="placeholder.jpg" alt="Collier">
+                <div class="product-info">
+                    <h3>Collier en argent</h3>
+                    <p>Prix : $39.99</p>
+                </div>
+            </div>
+            <!-- Ajoutez d'autres nouveaux arrivages ici -->
         </section>
 
         <section id="best-sellers">
             <h2>Meilleures ventes</h2>
-            <!-- Ajoutez ici des images ou des descriptions de vos meilleures ventes -->
+            <div class="product">
+                <img src="placeholder.jpg" alt="Bracelet">
+                <div class="product-info">
+                    <h3>Bracelet de perles</h3>
+                    <p>Prix : $49.99</p>
+                </div>
+            </div>
+            <!-- Ajoutez d'autres meilleures ventes ici -->
         </section>
     </main>
 
